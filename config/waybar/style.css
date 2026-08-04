@@ -19,6 +19,7 @@ window#waybar {
 #custom-keyboard,
 #custom-bluetooth,
 #network,
+#custom-weather
 #tray {
   background: transparent;
   margin: 0;
@@ -116,7 +117,8 @@ window#waybar {
 #backlight,
 #custom-launcher,
 #custom-powermenu,
-#custom-keyboard {
+#custom-keyboard,
+#custom-weather {
   transition: background 0.2s ease;
 }
 
@@ -130,7 +132,8 @@ window#waybar {
 #backlight:hover,
 #custom-launcher:hover,
 #custom-powermenu:hover,
-#custom-keyboard:hover {
+#custom-keyboard:hover,
+#custom-weather:hover {
   background: #2b2f37;
   border-radius: 6px;
 }
@@ -143,4 +146,8 @@ window#waybar {
   margin-right: 10px;
   padding: 0 7px;
   border-radius: 0;
+}
+#custom-weather {
+  background: transparent;
+  margin-left: 15px;
 }
