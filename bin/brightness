@@ -1,34 +1,21 @@
 #!/usr/bin/env bash
+STEP=5
 
-# Graphics card
-CARD=$(basename "$(find /sys/class/backlight/* | head -n 1)")
+get_backlight() {
+    brightnessctl -m | awk -F, '{gsub("%","",$4); print $4}'
+}
 
-
-# Increase brightness
 inc_backlight() {
-	if [[ "$CARD" == *"intel_"* ]]; then
-		brightnessctl --device "$CARD" set +5%
-	else
-		light -A 5
-	fi
+    brightnessctl set "${STEP}%+"
 }
 
-# Decrease brightness
 dec_backlight() {
-	if [[ "$CARD" == *"intel_"* ]]; then
-		brightnessctl --device "$CARD" set 5-%
-	else
-		light -U 5
-	fi
+    brightnessctl set "${STEP}%-"
 }
 
-# Execute accordingly
-if [[ "$1" == "--get" ]]; then
-	get_backlight
-elif [[ "$1" == "--up" ]]; then
-	inc_backlight
-elif [[ "$1" == "--down" ]]; then
-	dec_backlight
-else
-	get_backlight
-fi
+case "$1" in
+    --get)  get_backlight ;;
+    --up)   inc_backlight ;;
+    --down) dec_backlight ;;
+    *)      get_backlight ;;
+esac
