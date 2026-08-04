@@ -1,0 +1,11 @@
+#!/bin/sh
+
+pgrep -x waybar
+status=$?
+
+if test $status -eq 0 
+then
+  killall waybar
+else 
+  waybar &
+fi
