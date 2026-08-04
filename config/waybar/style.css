@@ -1,0 +1,146 @@
+* {
+  border: none;
+  font-family: "JetBrainsMono Nerd Font", "Material Design Icons";
+  font-size: 13px;
+}
+
+window#waybar {
+  background: rgba(18, 18, 18, 0.9);
+  color: #adb1b9;
+  border-radius: 8px;
+}
+#custom-launcher,
+#temperature,
+#memory,
+#cpu,
+#battery,
+#backlight,
+#pulseaudio,
+#custom-keyboard,
+#custom-bluetooth,
+#network,
+#tray {
+  background: transparent;
+  margin: 0;
+  padding: 0 7px;
+  border-radius: 0;
+}
+
+#workspaces,
+#clock {
+  background: #2b2f37;
+  border-radius: 8px;
+  margin: 5px 4px;
+  padding: 0 6px;
+}
+
+#custom-launcher {
+  color: #61afef;
+  font-size: 24px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+#temperature {
+  color: #a4ebf3;
+}
+#memory {
+  color: #d19a66;
+}
+#cpu {
+  color: #989cff;
+}
+#battery {
+  color: #a0e8a2;
+}
+#backlight {
+  color: #61afef;
+}
+#pulseaudio {
+  color: #d35f5e;
+}
+#custom-keyboard {
+  color: #ffffff;
+}
+#custom-bluetooth {
+  color: #89b4fa;
+}
+#network {
+  color: #a3be8c;
+}
+#network.disconnected {
+  color: #d35f5e;
+}
+#clock {
+  color: #888e96;
+}
+#custom-powermenu {
+  color: #d35f5e;
+}
+
+#workspaces button {
+  padding: 0 16px;
+  background: transparent;
+  color: #646870;
+  border-radius: 6px;
+  box-shadow: inset 0 -2px 0 transparent;
+}
+
+#workspaces button.active {
+  background: #313435;
+  box-shadow: inset 0 -2px 0 #565c64;
+}
+
+#workspaces button:nth-child(1) {
+  color: #f9de8f;
+}
+#workspaces button:nth-child(2) {
+  color: #ff9b93;
+}
+#workspaces button:nth-child(3) {
+  color: #95e1d3;
+}
+#workspaces button:nth-child(4) {
+  color: #81a1c1;
+}
+#workspaces button:nth-child(5) {
+  color: #a3be8c;
+}
+
+#battery,
+#network,
+#custom-bluetooth,
+#pulseaudio,
+#memory,
+#cpu,
+#temperature,
+#backlight,
+#custom-launcher,
+#custom-powermenu,
+#custom-keyboard {
+  transition: background 0.2s ease;
+}
+
+#battery:hover,
+#network:hover,
+#custom-bluetooth:hover,
+#pulseaudio:hover,
+#memory:hover,
+#cpu:hover,
+#temperature:hover,
+#backlight:hover,
+#custom-launcher:hover,
+#custom-powermenu:hover,
+#custom-keyboard:hover {
+  background: #2b2f37;
+  border-radius: 6px;
+}
+
+#temperature.critical {
+  color: #ff5555;
+}
+#custom-powermenu {
+  background: transparent;
+  margin-right: 10px;
+  padding: 0 7px;
+  border-radius: 0;
+}
