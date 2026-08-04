@@ -30,7 +30,7 @@ hl.on("hyprland.start", function ()
    hl.exec_cmd(terminal)
    hl.exec_cmd("nm-applet")
    hl.exec_cmd("waybar")
-   hl.exec_cmd("swww-daemon") 
+   hl.exec_cmd("awww-daemon") 
    hl.exec_cmd("~/bin/random-wallpaper.sh &")
 end)
 
@@ -249,6 +249,12 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(discord))
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(note))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(messenger))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(ai))
+
+-- Waybar toggle
+hl.bind(
+    mainMod .. " + B",
+    hl.dsp.exec_cmd("/data/alan_hyperland/bin/toggle-waybar")
+)
 
 -- Screenshots
 hl.bind(
