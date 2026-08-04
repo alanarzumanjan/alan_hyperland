@@ -246,7 +246,7 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(code))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(discord))
-hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(note))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(note))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(messenger))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(ai))
 
