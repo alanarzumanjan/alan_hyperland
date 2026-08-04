@@ -1,0 +1,3 @@
+config/mpd/db
+config/mpd/state
+config/ncmpcpp/error.log
