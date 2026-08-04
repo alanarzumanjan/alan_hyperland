@@ -4,7 +4,7 @@
     "position": "top",
     "height": 44,
     "margin": "10 12 0 12",
-    "modules-left": ["custom/launcher", "hyprland/workspaces"],
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/weather"],
     "modules-center": ["temperature", "memory", "cpu"],
     "modules-right": [
       "battery",
@@ -87,10 +87,9 @@
     },
     
     "backlight": {
-      "device": "amdgpu_bl2",
       "format": "󰆌 {percent}%",
-      "on-scroll-up": "brightnessctl set +5%",
-      "on-scroll-down": "brightnessctl set 5%-",
+      "on-scroll-up": "/data/alan_hyperland/bin/brightness --up",
+      "on-scroll-down": "/data/alan_hyperland/bin/brightness --down",
       "tooltip": false,
     },
 
@@ -123,8 +122,8 @@
       "format-wifi": "󰖩",
       "format-ethernet": "󰈀",
       "format-disconnected": "󰖪",
-      "on-click": "data/alan_hyperland/bin/wifimenu",
-      "tooltip-format": "{essid} {signalStrength}%\n↑ {bandwidthUpBits} ↓ {bandwidthDownBits}",
+      "on-click": "/data/alan_hyperland/bin/wifimenu",
+      "tooltip-format": "{essid} {signalStrength}%\n↓ {bandwidthDownBits} ↑ {bandwidthUpBits}",
     },
 
     "tray": {
