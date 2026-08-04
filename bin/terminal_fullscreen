@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Использование ibus, который вы скачали, для исправления DBus
+export GLFW_IM_MODULE=ibus
+export GTK_IM_MODULE=ibus
+
+# Запускаем Kitty. Отступы и прозрачность он сам подтянет из kitty.conf
+# Вместо --fullscreen используем --start-as fullscreen (он надежнее)
+kitty --class 'Fullscreen,Fullscreen' --start-as fullscreen
