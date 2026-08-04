@@ -1,12 +1,11 @@
 #!/bin/sh
 
 city="Riga"
-url="wttr.in/$city?format=3"
-weather=$(curl -s $url)
+url="wttr.in/${city}?format=3"
+weather=$(curl -s --max-time 5 "$url")
 
-if [ $(echo "$weather" | grep -E "(Unknown|curl|HTML)" | wc -l) -gt 0 ]; then
+if echo "$weather" | grep -qE "(Unknown|curl|HTML)"; then
     echo "WEATHER UNAVAILABLE"
 else
     echo "$weather" | awk '{print $1" "$3}'
 fi
-
