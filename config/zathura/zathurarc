@@ -1,0 +1,42 @@
+set font "JetBrains Mono 12"
+set recolor true
+set recolor-darkcolor "#cdd6f4"
+set recolor-lightcolor "#11111b"
+set statusbar-bg "#11111b"
+set statusbar-fg "#cdd6f4"
+set notification-bg "#313244"
+set notification-fg "#cdd6f4"
+set notification-error-bg "#f38ba8"
+set notification-error-fg "#11111b"
+set notification-warning-bg "#f9e2af"
+set notification-warning-fg "#11111b"
+set default-bg "#11111b"
+set default-fg "#cdd6f4"
+set selection-clipboard clipboard
+
+map <C-o> open
+map <C-s> save
+map q quit
+map f toggle_fullscreen
+map r reload
+map <Space> scrolldown
+map <S-Space> scrollup
+map j scrolldown
+map k scrollup
+map h navigate-left
+map l navigate-right
+map gg navigate-first
+map G navigate-last
+map d half-scrolldown
+map u half-scrollup
+map <S-Right> zoom-in
+map <S-Left> zoom-out
+map <C-f> search
+map <C-g> search-next
+map <S-C-g> search-prev
+
+set incremental-search true
+
+set render-loading true
+set adjust-open width
+set sync-title true
