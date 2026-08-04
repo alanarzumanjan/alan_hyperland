@@ -1,0 +1,147 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "height": 44,
+    "margin": "10 12 0 12",
+    "modules-left": ["custom/launcher", "hyprland/workspaces"],
+    "modules-center": ["temperature", "memory", "cpu"],
+    "modules-right": [
+      "battery",
+      "backlight",
+      "pulseaudio",
+      "custom/keyboard",
+      "clock",
+      "custom/bluetooth",
+      "network",
+      "custom/powermenu",
+    ],
+
+    "custom/launcher": {
+      "format": "󰣇",
+      "on-click": "rofi -show drun",
+      "tooltip": false,
+    },
+
+    "hyprland/workspaces": {
+      "format": "{name}",
+      "active-only": false,
+      "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+      },
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+    },
+
+    "custom/weather": {
+      "exec": "/data/alan_hyperland/bin/weather",
+      "interval": 1800,
+      "format": "{}",
+      "tooltip": false,
+    },
+
+    "custom/calculator": {
+      "format": "󰞴",
+      "on-click": "/data/alan_hyperland/bin/calculator",
+      "tooltip": false,
+    },
+
+    "temperature": {
+      "thermal-zone": 0,
+      "critical-threshold": 70,
+      "interval": 2,
+      "format": "{icon} {temperatureC}°",
+      "format-critical": "{icon} {temperatureC}°",
+      "format-icons": ["\udb81\udf17"],
+    },
+
+    "memory": {
+      "interval": 2,
+      "format": "\udb80\udf5b {used:0.1f} GiB",
+      "tooltip": false,
+    },
+
+    "cpu": {
+      "interval": 2,
+      "format": "\udb81\udc93 {usage}%",
+      "tooltip": false,
+    },
+
+    "battery": {
+      "interval": 5,
+      "states": { "critical": 10, "warning": 30, "good": 95 },
+      "format": "{icon} {capacity}%",
+      "format-charging": "\udb80\udc84 {capacity}%",
+      "format-full": "\udb80\udc79 {capacity}%",
+      "format-icons": [
+        "\udb80\udc7a",
+        "\udb80\udc7c",
+        "\udb80\udc7e",
+        "\udb80\udc80",
+        "\udb80\udc79",
+      ],
+    },
+    
+    "backlight": {
+      "device": "amdgpu_bl2",
+      "format": "󰆌 {percent}%",
+      "on-scroll-up": "brightnessctl set +5%",
+      "on-scroll-down": "brightnessctl set 5%-",
+      "tooltip": false,
+    },
+
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "\udb81\udd07",
+      "format-icons": {
+        "default": ["\udb81\udd7e", "\udb81\udd7e", "\udb81\udd7e"],
+      },
+      "on-click": "pavucontrol",
+      "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+      "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    },
+
+    "custom/keyboard": {
+      "exec": "/home/alan/.local/bin/kblayout",
+      "interval": 1,
+      "on-click": "/home/alan/.local/bin/kblayout switch",
+      "tooltip": false,
+    },
+
+    "custom/bluetooth": {
+      "exec": "/home/alan/.local/bin/bt-status",
+      "return-type": "json",
+      "interval": 5,
+      "on-click": "blueman-manager",
+    },
+
+    "network": {
+      "format-wifi": "󰖩",
+      "format-ethernet": "󰈀",
+      "format-disconnected": "󰖪",
+      "on-click": "data/alan_hyperland/bin/wifimenu",
+      "tooltip-format": "{essid} {signalStrength}%\n↑ {bandwidthUpBits} ↓ {bandwidthDownBits}",
+    },
+
+    "tray": {
+      "icon-size": 14,
+      "spacing": 6,
+    },
+
+    "clock": {
+      "format": "󰅐 {:%H:%M}",
+      "format-alt": "󰅐 {:%a, %d %b %Y}",
+      "tooltip": false,
+    },
+
+    "custom/powermenu": {
+      "format": "⏻",
+      "on-click": "/data/alan_hyperland/bin/powermenu",
+      "tooltip": false,
+    },
+  },
+]
