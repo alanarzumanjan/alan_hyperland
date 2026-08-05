@@ -38,7 +38,6 @@ alias rofiedit="nano ~/.config/rofi/config.rasi"
 # Update
 alias update="sudo pacman -Syu"
 
-
 # PATH
 set -gx PATH $PATH ~/.dotnet/tools
 set -gx PATH $PATH ~/flutter/bin
@@ -61,11 +60,13 @@ alias l="eza --icons --color=always"
 alias lt="eza --tree --level=2 --icons"
 alias grep="grep --color=auto"
 
+# Music
+alias music="ncmpcpp"
 alias play="mpv ~/Media/Music/Phonks --shuffle --no-video --input-ipc-server=/tmp/mpv-socket >/dev/null 2>&1 & disown"
 alias next="echo 'playlist-next' | socat - /tmp/mpv-socket"
 alias prev="echo 'playlist-prev' | socat - /tmp/mpv-socket"
 alias pause="echo 'cycle pause' | socat - /tmp/mpv-socket"
-alias mstop="killall mpv"
+alias mstop="killall mpv && kilall mpd"
 
 alias orphans="pacman -Qtdq"
 alias search="pacman -Ss"
