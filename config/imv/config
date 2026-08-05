@@ -1,0 +1,12 @@
+background = #11111b
+
+bind j next
+bind k prev
+bind q quit
+bind f toggle_fullscreen
+bind r reload
+
+bind + zoom_in
+bind - zoom_out
+
+default_mode = fit
