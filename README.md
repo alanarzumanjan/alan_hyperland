@@ -5,12 +5,8 @@ Personal configuration files for Arch Linux running the Hyprland window manager.
 
 ## Repository Structure
 
-- `bin/` – Custom scripts for system actions (brightness, battery, fullscreen terminal, powermenu, wifi menu, color picker, etc.).
-- `.config/hypr/` – Hyprland configuration.
-- `.config/waybar/` – Waybar panel configuration and styling.
-- `.config/rofi/` – Application launcher theme and configuration.
-- `.bashrc` – Bash shell configuration with aliases and environment variables.
-- `mpd.conf` – Music Player Daemon configuration.
+- `/bin` – Custom scripts for system actions (brightness, battery, fullscreen terminal, powermenu, wifi menu, color picker, etc.).
+- `/config` – Apps configurations.
 
 ## Dependencies
 
