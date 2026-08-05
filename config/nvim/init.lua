@@ -10,12 +10,6 @@ vim.opt.mouse = 'a'
 vim.opt.termguicolors = true
 vim.opt.clipboard = "unnamedplus"
 
-vim.keymap.set("i", "<Up>", "<Nop>")
-vim.keymap.set("i", "<Down>", "<Nop>")
-vim.keymap.set("i", "<Left>", "<Nop>")
-vim.keymap.set("i", "<Right>", "<Nop>")
-vim.keymap.set("n", "<C-a>", "ggVG", { noremap = true })
-
 -- Lazy.nvim setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -93,5 +87,8 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, {desc = "Hover info"})
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {desc = "Rename symbol"})
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {desc = "Code action"})
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.keymap.set("i", "<Up>", "<Nop>")
+vim.keymap.set("i", "<Down>", "<Nop>")
+vim.keymap.set("i", "<Left>", "<Nop>")
+vim.keymap.set("i", "<Right>", "<Nop>")
+vim.keymap.set("n", "<C-a>", "ggVG", { noremap = true })
