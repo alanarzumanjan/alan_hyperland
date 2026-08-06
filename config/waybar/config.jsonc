@@ -38,7 +38,7 @@
     },
 
     "custom/weather": {
-      "exec": "/data/alan_hyperland/bin/weather",
+      "exec": "/data/alan_home_ext/alan_hyperland/bin/weather",
       "interval": 1800,
       "format": "{}",
       "tooltip": false,
@@ -46,7 +46,7 @@
 
     "custom/calculator": {
       "format": "󰞴",
-      "on-click": "/data/alan_hyperland/bin/calculator",
+      "on-click": "/data/alan_home_ext/alan_hyperland/bin/calculator",
       "tooltip": false,
     },
 
@@ -88,8 +88,8 @@
     
     "backlight": {
       "format": "󰆌 {percent}%",
-      "on-scroll-up": "/data/alan_hyperland/bin/brightness --up",
-      "on-scroll-down": "/data/alan_hyperland/bin/brightness --down",
+      "on-scroll-up": "/data/alan_home_ext/alan_hyperland/bin/brightness --up",
+      "on-scroll-down": "/data/alan_home_ext/alan_hyperland/bin/brightness --down",
       "tooltip": false,
     },
 
@@ -122,7 +122,7 @@
       "format-wifi": "󰖩",
       "format-ethernet": "󰈀",
       "format-disconnected": "󰖪",
-      "on-click": "/data/alan_hyperland/bin/wifimenu",
+      "on-click": "/data/alan_home_ext/alan_hyperland/bin/wifimenu",
       "tooltip-format": "{essid} {signalStrength}%\n↓ {bandwidthDownBits} ↑ {bandwidthUpBits}",
     },
 
@@ -139,7 +139,7 @@
 
     "custom/powermenu": {
       "format": "⏻",
-      "on-click": "/data/alan_hyperland/bin/powermenu",
+      "on-click": "/data/alan_home_ext/alan_hyperland/bin/powermenu",
       "tooltip": false,
     },
   },

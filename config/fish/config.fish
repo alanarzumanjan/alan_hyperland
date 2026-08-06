@@ -171,4 +171,4 @@ function update
     echo (set_color green)"update done"(set_color normal)
 end
 
-fish_add_path /data/alan_hyperland/bin
+fish_add_path /data/alan_home_ext/alan_hyperland/bin
