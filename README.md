@@ -45,7 +45,7 @@ source ~/.bashrc
 chmod +x ~/dotfiles/bin/*
 ```
 
-5. If you use a custom location for your scripts (like `/data/alan_hyperland/bin`), update the paths in `waybar/config` and `.bashrc`.
+5. If you use a custom location for your scripts (like `/data/alan_home_ext/alan_hyperland/bin`), update the paths in `waybar/config` and `.bashrc`.
 
 ## Usage
 
