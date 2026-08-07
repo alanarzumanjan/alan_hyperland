@@ -1,4 +1,4 @@
-# Alam Hyperland
+# Alan Hyperland
 (Test version, I am in process)
 
 Personal configuration files for Arch Linux running the Hyprland window manager.
