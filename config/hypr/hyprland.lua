@@ -2,18 +2,27 @@
 ---- MONITORS ----
 ------------------
 
+local laptop = "eDP-1"
+local screen = "HDMI-A-1"
+
 hl.monitor({
-    output   = "",
+    output   = laptop,
+    mode     = "preferred",
+    position = "auto",
+    scale    = "auto",
+})
+hl.monitor({
+    output   = screen,
     mode     = "preferred",
     position = "auto",
     scale    = "auto",
 })
 
-hl.workspace_rule({ workspace = "1", monitor = "eDP-1" })
-hl.workspace_rule({ workspace = "2", monitor = "eDP-1" })
-hl.workspace_rule({ workspace = "3", monitor = "eDP-1" })
-hl.workspace_rule({ workspace = "4", monitor = "HDMI-A-1" })
-hl.workspace_rule({ workspace = "5", monitor = "HDMI-A-1" })
+hl.workspace_rule({ workspace = "1", monitor = laptop })
+hl.workspace_rule({ workspace = "2", monitor = laptop })
+hl.workspace_rule({ workspace = "3", monitor = laptop })
+hl.workspace_rule({ workspace = "4", monitor = screen })
+hl.workspace_rule({ workspace = "5", monitor = screen })
 
 ---------------------
 ---- MY PROGRAMS ----
