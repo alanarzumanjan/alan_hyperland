@@ -257,16 +257,25 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(code))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(discord))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(note))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(messenger))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(ai))
 
+-- Tails resizing
+hl.bind(mainMod .. " + CTRL + left",  hl.dsp.exec_cmd("resizeactive -10% 0"))
+hl.bind(mainMod .. " + CTRL + right", hl.dsp.exec_cmd("resizeactive +10% 0"))
+hl.bind(mainMod .. " + CTRL + up",    hl.dsp.exec_cmd("resizeactive 0 -10%"))
+hl.bind(mainMod .. " + CTRL + down",  hl.dsp.exec_cmd("resizeactive 0 +10%"))
+
+-- 50 / 50 Tails
+hl.bind(mainMod .. " + CTRL + 0", hl.dsp.exec_cmd("splitratio 1"))
+
 -- Waybar toggle
 hl.bind(
-    mainMod .. " + B",
+    mainMod .. " + Y",
     hl.dsp.exec_cmd("/data/alan_home_ext/alan_hyperland/bin/toggle-waybar")
 )
 
