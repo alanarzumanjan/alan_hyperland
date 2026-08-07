@@ -46,6 +46,7 @@ hl.on("hyprland.start", function ()
    hl.exec_cmd("waybar")
    hl.exec_cmd("awww-daemon") 
    hl.exec_cmd("~/bin/random-wallpaper.sh &")
+   hl.exec_cmd("hyprpicker -a &")
 end)
 
 -------------------------------
@@ -270,15 +271,17 @@ hl.bind(mainMod .. " + CTRL + right", hl.dsp.exec_cmd("resizeactive +10% 0"))
 hl.bind(mainMod .. " + CTRL + up",    hl.dsp.exec_cmd("resizeactive 0 -10%"))
 hl.bind(mainMod .. " + CTRL + down",  hl.dsp.exec_cmd("resizeactive 0 +10%"))
 
--- 50 / 50 Tails
-hl.bind(mainMod .. " + CTRL + 0", hl.dsp.exec_cmd("splitratio 1"))
-
 -- Waybar toggle
 hl.bind(
     mainMod .. " + Y",
     hl.dsp.exec_cmd("/data/alan_home_ext/alan_hyperland/bin/toggle-waybar")
 )
 
+-- Color Picker
+hl.bind(
+    mainMod .. " + SHIFT + C",
+    hl.dsp.exec_cmd("hyprpicker -a")
+)
 -- Screenshots
 hl.bind(
     mainMod .. " + SHIFT + S",
