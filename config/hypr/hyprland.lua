@@ -243,7 +243,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(code))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(discord))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(note))
@@ -261,8 +261,11 @@ hl.bind(
     mainMod .. " + SHIFT + S",
     hl.dsp.exec_cmd("sh -c 'flameshot gui -p ~/Media/Pictures/Screenshots -c'")
 )
--- Sleep
+-- Sleep 
 hl.bind(mainMod .. " + ALT + S", hl.dsp.exec_cmd("systemctl suspend"))
+
+-- Lock screen
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
