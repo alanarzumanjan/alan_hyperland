@@ -99,7 +99,7 @@
       "format-icons": {
         "default": ["\udb81\udd7e", "\udb81\udd7e", "\udb81\udd7e"],
       },
-      "on-click": "pavucontrol",
+      "on-click": "hyprpwcenter",
       "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
       "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
     },
