@@ -1,19 +1,19 @@
 #!/bin/bash
 
-WALLPAPER_DIR=~/Media/Pictures/Wallpapers
+WALLPAPER_DIR="$HOME/Media/Pictures/Wallpapers"
 DEFAULT_WALL="$WALLPAPER_DIR/default.png"
 
-if ! pgrep -x "awww-daemon" > /dev/null; then
-    awww-daemon &
-    sleep 1
-fi
+while ! pgrep -x hyprpaper > /dev/null; do
+    sleep 0.5
+done
 
 if [ -f "$DEFAULT_WALL" ]; then
-    RANDOM_WALL="$DEFAULT_WALL"
+    WALL="$DEFAULT_WALL"
 else
-    RANDOM_WALL=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" -o -iname "*.gif" \) | shuf -n 1)
+    WALL=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" -o -iname "*.gif" \) | shuf -n 1)
 fi
 
-if [ -n "$RANDOM_WALL" ]; then
-    awww img "$RANDOM_WALL"
+if [ -n "$WALL" ]; then
+    hyprctl hyprpaper wallpaper "eDP-1,$WALL,cover"
+    hyprctl hyprpaper wallpaper "HDMI-A-1,$WALL,cover"
 fi
