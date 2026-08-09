@@ -10,7 +10,6 @@ window#waybar {
   border-radius: 8px;
 }
 
-#custom-launcher,
 #temperature,
 #memory,
 #cpu,
@@ -36,12 +35,6 @@ window#waybar {
   padding: 0 6px;
 }
 
-#custom-launcher {
-  color: #61afef;
-  font-size: 24px;
-  margin-left: 6px;
-  margin-right: 6px;
-}
 #temperature {
   color: #a4ebf3;
 }
@@ -177,4 +170,15 @@ window#waybar {
 #custom-weather:hover {
   background: #2b2f37;
   border-radius: 6px;
+}
+
+#custom-launcher {
+  background: transparent;
+  margin: 0 6px;
+  padding: 0 7px;
+}
+
+#custom-launcher label {
+  color: #61afef;
+  font-size: 24px;
 }
