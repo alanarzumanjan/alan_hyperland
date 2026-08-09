@@ -9,6 +9,7 @@ window#waybar {
   color: #adb1b9;
   border-radius: 8px;
 }
+
 #custom-launcher,
 #temperature,
 #memory,
@@ -19,7 +20,7 @@ window#waybar {
 #custom-keyboard,
 #custom-bluetooth,
 #network,
-#custom-weather
+#custom-weather,
 #tray {
   background: transparent;
   margin: 0;
@@ -76,35 +77,75 @@ window#waybar {
 }
 #custom-powermenu {
   color: #d35f5e;
+  background: transparent;
+  margin-right: 10px;
+  padding: 0 7px;
+  border-radius: 0;
+}
+#custom-weather {
+  background: transparent;
+  margin-left: 15px;
+}
+#temperature.critical {
+  color: #ff5555;
 }
 
 #workspaces button {
   padding: 0 16px;
   background: transparent;
-  color: #646870;
   border-radius: 6px;
   box-shadow: inset 0 -2px 0 transparent;
-}
-
-#workspaces button.active {
-  background: #313435;
-  box-shadow: inset 0 -2px 0 #565c64;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 #workspaces button:nth-child(1) {
   color: #f9de8f;
 }
+#workspaces button:nth-child(1):hover {
+  background: rgba(249, 222, 143, 0.2);
+  color: #f9de8f;
+  border-radius: 6px;
+}
+
 #workspaces button:nth-child(2) {
   color: #ff9b93;
 }
+#workspaces button:nth-child(2):hover {
+  background: rgba(255, 155, 147, 0.2);
+  color: #ff9b93;
+  border-radius: 6px;
+}
+
 #workspaces button:nth-child(3) {
   color: #95e1d3;
 }
+#workspaces button:nth-child(3):hover {
+  background: rgba(149, 225, 211, 0.2);
+  color: #95e1d3;
+  border-radius: 6px;
+}
+
 #workspaces button:nth-child(4) {
   color: #81a1c1;
 }
+#workspaces button:nth-child(4):hover {
+  background: rgba(129, 161, 193, 0.2);
+  color: #81a1c1;
+  border-radius: 6px;
+}
+
 #workspaces button:nth-child(5) {
   color: #a3be8c;
+}
+#workspaces button:nth-child(5):hover {
+  background: rgba(163, 190, 140, 0.2);
+  color: #a3be8c;
+  border-radius: 6px;
+}
+
+#workspaces button.active {
+  background: #313435;
+  box-shadow: inset 0 -2px 0 #565c64;
 }
 
 #battery,
@@ -136,18 +177,4 @@ window#waybar {
 #custom-weather:hover {
   background: #2b2f37;
   border-radius: 6px;
-}
-
-#temperature.critical {
-  color: #ff5555;
-}
-#custom-powermenu {
-  background: transparent;
-  margin-right: 10px;
-  padding: 0 7px;
-  border-radius: 0;
-}
-#custom-weather {
-  background: transparent;
-  margin-left: 15px;
 }
