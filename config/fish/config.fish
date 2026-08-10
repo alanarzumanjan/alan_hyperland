@@ -27,6 +27,8 @@ alias dcd="docker compose down"
 alias hypedit="nano ~/.config/hypr/hyprland.lua"
 alias hypup="hyprctl reload"
 alias hypshow="cat ~/.config/hypr/hyprland.lua"
+alias gohyp="cd /data/alan_home_ext/alan_hyperland"
+alias gorep="cd /data/Repositories"
 
 # Waybar
 alias wayedit="nano ~/.config/waybar/config.jsonc"
