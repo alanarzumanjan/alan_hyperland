@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Catppuccin Mocha (Custom)",
+  "name": "Catppuccin Mocha Blue-Alan Version",
   "version": "1.0",
   "browser_specific_settings": {
     "gecko": {
@@ -25,7 +25,9 @@
       "popup_text": "#cdd6f4",
       "popup_border": "#45475a",
       "ntp_background": "#1e1e2e",
-      "ntp_text": "#cdd6f4"
+      "ntp_text": "#cdd6f4",
+      "ntp_card_background": "#313244",
+      "toolbar_field_text_focus": "#cdd6f4"
     }
   }
 }
