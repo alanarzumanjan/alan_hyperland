@@ -27,8 +27,14 @@ window#waybar {
   border-radius: 0;
 }
 
-#workspaces,
 #clock {
+  background: #2b2f37;
+  border-radius: 8px;
+  margin: 5px 4px;
+  padding: 0 6px;
+}
+
+#workspaces{
   background: #2b2f37;
   border-radius: 8px;
   margin: 5px 4px;
