@@ -61,7 +61,8 @@ hl.env("XCURSOR_THEME", "catppuccin-mocha-rosewater-cursors")
 hl.env("GTK_THEME", "catppuccin-mocha-blue-standard+default")
 hl.env("GDK_SCALE", "2")
 hl.env("QT_SCALE_FACTOR", "1")
--- hl.set("xwayland:force_zero_scaling", "true")
+
+
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
