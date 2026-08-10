@@ -3,14 +3,13 @@ import sys
 from PIL import Image
 
 wallpaper_path = None
-monitor_size = "1920x1080"
+monitor_size = "3200x2000"
 
 black_list = [
     "gif", "swf", "bmp", "htt", "tif", "x",
     "htm", "ini", "txt", "mp4", "js", "html",
     "css", "ucs2le", "avi", "md", "cpyr"
 ]
-
 
 if len(sys.argv) <= 1:
     raise SystemExit("specify the path to the wallpaper")

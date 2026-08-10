@@ -43,11 +43,12 @@ local messenger = "flatpak run org.telegram.desktop"
 hl.on("hyprland.start", function () 
     hl.exec_cmd(terminal)
     hl.exec_cmd("nm-applet")
-    hl.exec_cmd("awww-daemon") 
+    -- hl.exec_cmd("awww-daemon") 
     hl.exec_cmd("waybar")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("hyprsunset")
-    hl.exec_cmd("~/bin/random-wallpaper.sh &")
+    hl.exec_cmd("hyprpaper &")
+    -- hl.exec_cmd("~/bin/random-wallpaper.sh &")
 end)
 
 -------------------------------
