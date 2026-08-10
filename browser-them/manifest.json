@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Catppuccin Mocha (Custom)",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "catppuccin-mocha-custom@alan.local"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#1e1e2e",
+      "tab_background_text": "#cdd6f4",
+      "toolbar": "#181825",
+      "toolbar_text": "#cdd6f4",
+      "toolbar_field": "#313244",
+      "toolbar_field_text": "#cdd6f4",
+      "toolbar_field_border": "#45475a",
+      "toolbar_field_focus": "#313244",
+      "toolbar_field_border_focus": "#89b4fa",
+      "tab_line": "#89b4fa",
+      "tab_selected": "#313244",
+      "icons": "#cdd6f4",
+      "popup": "#1e1e2e",
+      "popup_text": "#cdd6f4",
+      "popup_border": "#45475a",
+      "ntp_background": "#1e1e2e",
+      "ntp_text": "#cdd6f4"
+    }
+  }
+}
