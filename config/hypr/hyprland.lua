@@ -11,6 +11,7 @@ hl.monitor({
     position = "auto",
     scale    = "auto",
 })
+
 hl.monitor({
     output   = screen,
     mode     = "preferred",
@@ -21,8 +22,10 @@ hl.monitor({
 hl.workspace_rule({ workspace = "1", monitor = laptop })
 hl.workspace_rule({ workspace = "2", monitor = laptop })
 hl.workspace_rule({ workspace = "3", monitor = laptop })
-hl.workspace_rule({ workspace = "4", monitor = screen })
-hl.workspace_rule({ workspace = "5", monitor = screen })
+hl.workspace_rule({ workspace = "4", monitor = laptop })
+hl.workspace_rule({ workspace = "5", monitor = laptop })
+hl.workspace_rule({ workspace = "6", monitor = screen })
+hl.workspace_rule({ workspace = "7", monitor = screen })
 
 ---------------------
 ---- MY PROGRAMS ----
