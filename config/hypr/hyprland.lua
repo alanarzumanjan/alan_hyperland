@@ -31,7 +31,7 @@ hl.workspace_rule({ workspace = "7", monitor = screen })
 ---- MY PROGRAMS ----
 ---------------------
 local terminal    = "kitty"
-local fileManager = "thunar"
+local fileManager = "nemo"
 local menu = "rofi -show drun -theme ~/.config/rofi/config.rasi"
 local browser = "librewolf"
 local code = "code"
