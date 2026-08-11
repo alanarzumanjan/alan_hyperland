@@ -37,7 +37,7 @@ window#waybar {
 #workspaces{
   background: #2b2f37;
   border-radius: 8px;
-  margin: 5px 5px;
+  margin: 7px 7px;
   /* padding: 0 6px; */
 }
 
@@ -139,6 +139,25 @@ window#waybar {
 #workspaces button:nth-child(5):hover {
   background: rgba(163, 190, 140, 0.2);
   color: #a3be8c;
+  border-radius: 6px;
+}
+
+#workspaces button:nth-child(6) {
+  color: #f9de8f;
+}
+
+#workspaces button:nth-child(6):hover {
+  background: rgba(249, 222, 143, 0.2);
+  color: #f9de8f;
+  border-radius: 6px;
+}
+
+#workspaces button:nth-child(7) {
+  color: #ff9b93;
+}
+#workspaces button:nth-child(7):hover {
+  background: rgba(255, 155, 147, 0.2);
+  color: #ff9b93;
   border-radius: 6px;
 }
 
