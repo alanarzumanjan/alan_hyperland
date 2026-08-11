@@ -22,14 +22,15 @@ alias gc="git commit"
 alias dps="docker ps"
 alias dcu="docker compose up -d"
 alias dcd="docker compose down"
+alias docker="lazydocker"
 
 # Hyprland
 alias hypedit="nano ~/.config/hypr/hyprland.lua"
 alias hypup="hyprctl reload"
 alias hypshow="cat ~/.config/hypr/hyprland.lua"
-alias gohyp="cd /data/alan_home_ext/alan_hyperland"
+alias gohyp="/data/alan_home_ext/alan_hyperland"
 alias gorep="cd /data/Repositories"
-
+alias home="cd /home/alan"
 # Waybar
 alias wayedit="nano ~/.config/waybar/config.jsonc"
 alias waycss="nano ~/.config/waybar/style.css"
