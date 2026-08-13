@@ -31,6 +31,7 @@ alias hypshow="cat ~/.config/hypr/hyprland.lua"
 alias gohyp="/data/alan_home_ext/alan_hyperland"
 alias gorep="cd /data/Repositories"
 alias home="cd /home/alan"
+
 # Waybar
 alias wayedit="nano ~/.config/waybar/config.jsonc"
 alias waycss="nano ~/.config/waybar/style.css"
@@ -51,9 +52,7 @@ set -gx ANDROID_HOME /data/Android/Sdk
 set -gx ANDROID_SDK_ROOT /data/Android/Sdk
 set -gx CHROME_EXECUTABLE /usr/bin/chromium
 
-
 # Editor
-
 set -gx EDITOR nano
 
 # Reload fish
@@ -78,6 +77,7 @@ alias clean="sudo pacman -Rns (pacman -Qtdq 2>/dev/null) 2>/dev/null || true"
 alias up="update"
 alias download="sudo pacman -S"
 
+# Docker
 alias docon="sudo systemctl start docker.socket docker.service && docker info --format '{{.ServerVersion}}' && echo 'docker: up'"
 alias docoff="sudo systemctl stop docker.service docker.socket && echo 'docker: down'"
 
@@ -99,6 +99,10 @@ alias docrun="docclean && docker compose build --no-cache && docker compose up -
 alias waybar_show="cat ~/.config/waybar/config.jsonc"
 alias waybar_style="nano ~/.config/waybar/style.css"
 alias waybar_showstyle="cat ~/.config/waybar/style.css"
+
+# Fun
+alias rain="terminal-rain"
+alias bit="cava"
 
 # --- VPN ---
 alias rus_vpn="sudo openvpn --config /home/alan/Documents/servers/vpn696556713.opengw.net_ddns_udp.ovpn"
