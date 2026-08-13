@@ -3,13 +3,10 @@
 starship init fish | source
 
 # Aliases
-
 alias ls="eza --icons=auto --sort=time"
 alias ll="eza -lah --icons --no-permissions --sort=time"
 alias la="eza -lah --icons=auto --sort=time"
-
 alias c="clear"
-
 alias ..="cd .."
 alias ...="cd ../.."
 
