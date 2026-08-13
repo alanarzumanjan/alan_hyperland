@@ -1,0 +1,48 @@
+@use "colors" as *;
+
+window.Bar {
+  background: transparent;
+}
+
+.bar-inner {
+  background-color: $base;
+  border-radius: 12px;
+  border: 1px solid $surface0;
+  margin: 6px 10px;
+  padding: 4px 12px;
+  color: $text;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+}
+
+.clock {
+  color: $text;
+  font-weight: bold;
+}
+
+.clock:hover {
+  color: $accent;
+}
+.workspaces {
+  padding: 0 4px;
+}
+
+.workspace {
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 8px;
+  background-color: $surface0;
+  color: $subtext;
+  margin: 0 2px;
+  transition: all 200ms ease;
+}
+
+.workspace:hover {
+  background-color: $surface1;
+}
+
+.workspace.focused {
+  background-color: $accent;
+  color: $base;
+  font-weight: bold;
+}
