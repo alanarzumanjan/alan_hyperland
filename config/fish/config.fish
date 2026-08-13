@@ -9,6 +9,15 @@ alias la="eza -lah --icons=auto --sort=time"
 alias c="clear"
 alias ..="cd .."
 alias ...="cd ../.."
+alias orphans="pacman -Qtdq"
+alias search="pacman -Ss"
+alias remove="sudo pacman -Rns"
+alias clean="sudo pacman -Rns (pacman -Qtdq 2>/dev/null) 2>/dev/null || true"
+alias up="update"
+alias download="sudo pacman -S"
+alias l="eza --icons --color=always"
+alias lt="eza --tree --level=2 --icons"
+alias grep="grep --color=auto"
 
 # Git
 alias gs="git status"
@@ -55,10 +64,6 @@ set -gx EDITOR nano
 # Reload fish
 alias fishreload="source ~/.config/fish/config.fish"
 
-alias l="eza --icons --color=always"
-alias lt="eza --tree --level=2 --icons"
-alias grep="grep --color=auto"
-
 # Music
 alias music="ncmpcpp"
 alias play="mpv ~/Media/Music/Phonks --shuffle --no-video --input-ipc-server=/tmp/mpv-socket >/dev/null 2>&1 & disown"
@@ -66,13 +71,6 @@ alias next="echo 'playlist-next' | socat - /tmp/mpv-socket"
 alias prev="echo 'playlist-prev' | socat - /tmp/mpv-socket"
 alias pause="echo 'cycle pause' | socat - /tmp/mpv-socket"
 alias mstop="killall mpv && kilall mpd"
-
-alias orphans="pacman -Qtdq"
-alias search="pacman -Ss"
-alias remove="sudo pacman -Rns"
-alias clean="sudo pacman -Rns (pacman -Qtdq 2>/dev/null) 2>/dev/null || true"
-alias up="update"
-alias download="sudo pacman -S"
 
 # Docker
 alias docon="sudo systemctl start docker.socket docker.service && docker info --format '{{.ServerVersion}}' && echo 'docker: up'"
