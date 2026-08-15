@@ -6,9 +6,9 @@
     "width": 40,
     "height": 16,
     "padding": {
-      "top": 2,
+      "top": 1,
       "left": 2,
-      "right": 2
+      "right": 2,
     }
   },
   "display": {
@@ -96,12 +96,5 @@
       "folders": "/:/data",
       "format": "{1} / {2} ({3})"
     },
-    "break",
-    {
-      "type": "locale",
-      "key": "Locale"
-    },
-    "break",
-    "colors"
   ]
 }
