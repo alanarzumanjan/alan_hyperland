@@ -8,14 +8,14 @@ local screen = "HDMI-A-1"
 hl.monitor({
     output   = laptop,
     mode     = "preferred",
-    position = "auto",
+    position = "0x0",
     scale    = "auto",
 })
 
 hl.monitor({
     output   = screen,
     mode     = "preferred",
-    position = "auto",
+    position = "-1920x-40",
     scale    = "auto",
 })
 
